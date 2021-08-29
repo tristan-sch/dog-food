@@ -7,4 +7,9 @@ https://www.google.com/search?q=dr+clauder+adult+large&sxsrf=AOaemvKQ9BPgp8bMdpE
 
 It was a bit more complicated than I expected, I struggled with CSS. 
 
-Please view it on a large screen if possible. 
+
+
+/*UPDATE*/ 
+I updated the project with Flexbox after my review, much simpler! 
+
+

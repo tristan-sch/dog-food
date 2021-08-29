@@ -1,42 +1,45 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap');
 
-.intro {
-    background-color: #333333;
-    height: 300px;
-    width: 30%;
-    text-align: center;
+/* Main CSS*/ 
+body {
     margin: auto;
+    padding: auto;
+    height: auto;
+    font-family: "Montserrat", sans-serif;
+    display: grid;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-    padding-top: 3em;
-    padding-bottom: 2em;
+
+.flexbox {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+/* Flexbox-1 */ 
+
+.flexbox-1 {
+    background-color: #333333;
+    padding: 3em;
 }
 
 h1 {
     color: #9C2C3B;
-    font-size: 50px;
-    text-align: center;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    margin: 0;
     text-decoration: overline 5px #9C2C3B;
-    text-underline-offset: 9px;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 500;
+    line-height: 0em;
 }
+
 
 h2 {
     color: white;
     text-align: center;
-    margin-top: -1%;
     letter-spacing: 15px;
     font-size: 25px;
-    padding-left: 0.3em; 
-    font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
@@ -44,113 +47,118 @@ p {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
     text-decoration: underline 5px #9C2C3B;
     text-underline-offset: 9px;
-    padding-bottom: 3px
     }
 
-.eyja img {
-    
-    border-top:10px solid #9C2C3B;
-    width: 30%;
-    padding: 0;
-    height: 450px;
-    z-index: 1;
+
+.flexbox-1 img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
-h4 {
+/* Flexbox-2 */ 
+
+.flexbox-2 img {
+    display: block;
+    width: 100%;
+    border-top:10px solid #9C2C3B;
+}
+
+/* Flexbox-3 */ 
+
+.flexbox-3 {
+    background-color: #9b303e;
+   
+}
+
+h3 {
     color: white;
     text-transform: capitalize;
-    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 60px;
     font-weight: 500;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 62%;
-    left: 40%;
-    z-index: 9;
-
+    line-height: 0;
   }
 
   h5 {
     color: white;
     text-transform: capitalize;
-    text-decoration: underline;
-    font-size: 80px;
-    font-weight: 800;
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 70%;
-    left: 48%;
-    z-index: 7;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 0;
 
   }
 
-.chicken {
-    position: absolute;
-    width: 7%;
-    margin-left: 3em;
-    float: left;
-    z-index: 8;
-    margin-top: -10em;
-}
+/* Flexbox-4 */ 
 
-
-.banner {
-    background-color: #9b303e;
-    height: 150px;
-    width: 30%;
-    margin: auto;
-    text-align: center;
-}
-
-
-.footer {
+.flexbox-4 {
     background-color: #333333;
-    height: 180px;
-    width: 30%;
-    margin: auto;
-    text-align: center;
+    padding: 3em;
 }
-
-
-.sidebar {
-    background: #808487;
-    position: fixed;
-    left: 30%;
-    width: 125px;
-    height: 1075px;
-    padding: 20px 0;
-    margin: auto;
-  }
-
-h3 {
-    font-size: 110px;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
-    margin-top: 2.3em;
-    margin-left: 12%;
-
-  }
 
 .germany {
-width: 20%;
-float: left;
-margin-left: 10%;
-margin-top: -10%;
-transform: rotate(-20deg);
+    display: block;
+    width: 40%;
+    float: left;
+    transform: rotate(-20deg);
+    }
+    
+.approved {
+    display: block;
+    width: 30%;
+    float: right;
+    transform: rotate(-10deg);
 }
 
+/* Responsive */ 
+@media only screen and (min-width: 1500px) {
+
+/* Flexbox-1 */ 
+
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 30px;
+}
+
+
+.flexbox-1 img {
+    width: 30%;
+}
+
+/* Flexbox-3 */ 
+
+
+h3 {
+    font-size: 100px;
+  }
+
+  h5 {
+    font-size: 50px;
+  }
+
+/* Flexbox-4 */ 
+
+.germany {
+    width: 30%;
+    }
+    
 .approved {
     width: 15%;
-    float: right;
-    margin-right: 8%;
-    margin-top: -2%;
-    transform: rotate(-10deg);
+}
+
 }
